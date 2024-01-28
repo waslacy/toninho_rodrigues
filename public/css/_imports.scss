@@ -1,0 +1,56 @@
+$color-primary: #1C3C80;
+$color-secondary: #B50E0B;
+$color-btn-secondary-hover: #9c0806;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@font-face {
+    font-family: 'GoodTiming';
+    font-weight: bold;
+    src: url("../assets/good\ timing\ bd.otf") format("opentype");
+}
+
+$font-content: 'Roboto', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-content;
+}
+
+::-webkit-scrollbar{
+    background-color: #c4c4c4;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $color-secondary;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    margin: auto;
+    max-width: 1300px;
+    padding: 0 40px;
+}
+
+section{
+    padding: 80px 0;
+}
+
+
+@mixin flex($justify: initial, $align: initial, $direction: initial, $gap: 0px, $wrap: wrap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+    flex-wrap: $wrap;
+}

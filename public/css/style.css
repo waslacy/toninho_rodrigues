@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@font-face {
+  font-family: "GoodTiming";
+  font-weight: bold;
+  src: url("../assets/good timing bd.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  background-color: #c4c4c4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #B50E0B;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 40px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+header#site-header {
+  position: fixed;
+  width: 100vw;
+  box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
+  z-index: 999;
+}
+header#site-header .container {
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: initial;
+  gap: 0px;
+  flex-wrap: wrap;
+}
+header#site-header .container .menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: initial;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+header#site-header .container .menu ul a {
+  position: relative;
+}
+header#site-header .container .menu ul a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  background-color: #B50E0B;
+  height: 3px;
+  transition: 0.2s linear;
+  display: block;
+}
+header#site-header .container .menu ul a:hover {
+  color: #B50E0B;
+}
+header#site-header .container .menu ul a:hover::after {
+  width: 100%;
+}
+
+section#hero {
+  background-color: #1C3C80;
+  padding: 150px 0 0 0;
+}
+section#hero .container {
+  min-height: 700px;
+  position: relative;
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  flex-direction: initial;
+  gap: 0px;
+  flex-wrap: wrap;
+}
+section#hero .container .content {
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+  flex-direction: column;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+section#hero .container .content h1 {
+  color: #fff;
+  font-size: 5em;
+  position: relative;
+}
+section#hero .container .content h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: #B50E0B;
+  width: 97%;
+  height: 6px;
+  display: block;
+}
+section#hero .container .content h2 {
+  color: #fff;
+  font-size: 2em;
+}
+section#hero .container .hero_image {
+  position: absolute;
+  bottom: -34.5px;
+  right: 30px;
+}
+
+section#sobre .container {
+  display: flex;
+  gap: 60px;
+}
+section#sobre .container .content, section#sobre .container .map {
+  width: calc(50% - 30px);
+}
+section#sobre .container .content {
+  display: flex;
+  justify-content: initial;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+section#sobre .container .content h2 {
+  font-size: 2.4em;
+}
+section#sobre .container .content a.btn {
+  background-color: #B50E0B;
+  padding: 12px 24px;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.2s linear;
+}
+section#sobre .container .content a.btn:hover {
+  background-color: #9c0806;
+}
+section#sobre .container .map img {
+  width: 100%;
+  border-radius: 10px;
+  border-right: 8px solid #1C3C80;
+  border-bottom: 8px solid #1C3C80;
+}
+
+section#projetos {
+  background-color: #f1f1f1;
+}
+section#projetos .container h3 {
+  font-size: 1.6em;
+  color: #717171;
+  margin-bottom: 10px;
+  text-align: center;
+}
+section#projetos .container h2 {
+  font-size: 2.4em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+section#projetos .container .projetos {
+  display: flex;
+  justify-content: space-between;
+  align-items: initial;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+section#projetos .container .projetos .projeto {
+  width: calc(33% - 40px);
+}
+section#projetos .container .projetos .projeto .title {
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  flex-direction: initial;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+section#projetos .container .projetos .projeto .title i {
+  margin-top: 3px;
+  font-size: 2.8em;
+  color: #B50E0B;
+}
+section#projetos .container .projetos .projeto .title h4 {
+  font-size: 1.5em;
+}
+
+section#eventos .container h2 {
+  font-size: 2.4em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+section#eventos .container .eventos {
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+section#eventos .container .eventos .evento {
+  width: calc(25% - 30px);
+}
+section#eventos .container .eventos .evento img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=style.css.map */
